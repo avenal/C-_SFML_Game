@@ -26,49 +26,49 @@ namespace Engine
 	{
 
 		//left border
-		if (sprite.getPosition().x <= 10)
+		if (sprite.getPosition().x <= BOUNDARY)
 		{
 			
 			return 1;
 		}
 		//top
-		else if (sprite.getPosition().y <= 10) 
+		else if (sprite.getPosition().y <= BOUNDARY)
 		{
 			
 			return 2;
 		}
 		//bot
-		else if (sprite.getPosition().y + sprite.getLocalBounds().height >= SCREEN_HEIGHT-10)
+		else if (sprite.getPosition().y + sprite.getLocalBounds().height >= SCREEN_HEIGHT- BOUNDARY)
 		{
 			
 			return 3;
 		}
 		//right
-		else if (sprite.getPosition().x + sprite.getLocalBounds().width >= SCREEN_WIDTH-10) 
+		else if (sprite.getPosition().x + sprite.getLocalBounds().width >= SCREEN_WIDTH- BOUNDARY)
 		{
 		
 			return 4;
 		}
 		//top left
-		else if(sprite.getPosition().y <= 10 && sprite.getPosition().x <= 10)
+		else if(sprite.getPosition().y <= BOUNDARY && sprite.getPosition().x <= BOUNDARY)
 		{
 			
 			return 5;
 		}
 		//top right
-		else if (sprite.getPosition().y <= 10 && sprite.getPosition().x + sprite.getLocalBounds().width >= SCREEN_WIDTH - 10)
+		else if (sprite.getPosition().y <= BOUNDARY && sprite.getPosition().x + sprite.getLocalBounds().width >= SCREEN_WIDTH - BOUNDARY)
 		{
 			
 			return 6;
 		}
 		//bottom left
-		else if (sprite.getPosition().y + sprite.getLocalBounds().height >= SCREEN_HEIGHT - 10 && sprite.getPosition().x <= 10)
+		else if (sprite.getPosition().y + sprite.getLocalBounds().height >= SCREEN_HEIGHT - BOUNDARY && sprite.getPosition().x <= BOUNDARY)
 		{
 			
 			return 7;
 		}
 		//bottom right
-		else if (sprite.getPosition().x + sprite.getLocalBounds().width >= SCREEN_WIDTH - 10 && sprite.getPosition().y + sprite.getLocalBounds().height >= SCREEN_HEIGHT - 10)
+		else if (sprite.getPosition().x + sprite.getLocalBounds().width >= SCREEN_WIDTH - BOUNDARY && sprite.getPosition().y + sprite.getLocalBounds().height >= SCREEN_HEIGHT - BOUNDARY)
 		{
 			
 			return 8;

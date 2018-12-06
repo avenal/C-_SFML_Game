@@ -10,19 +10,19 @@ namespace Engine
 	public:
 		GridCell(int posX, int posY, GameDataRef data);
 		void ClearCell();
-		void AddWolf(sf::Sprite *wolf);
-		void AddSheWolf(sf::Sprite *sheWolf);
-		void AddHare(sf::Sprite *hare);
-		std::vector<sf::Sprite*> GetWolfSprites();
-		std::vector<sf::Sprite*> GetSheWolfSprites();
-		std::vector<sf::Sprite*> GetHareSprites();
+		void AddWolf(int index);
+		void AddSheWolf(int index);
+		void AddHare(int index);
+		std::vector<int> GetWolfSprites();
+		std::vector<int> GetSheWolfSprites();
+		std::vector<int> GetHareSprites();
 		sf::Sprite GetCellSprite();
 		~GridCell();
 	private:
 		GameDataRef _data;
-		std::vector<sf::Sprite*> wolfSprites;
-		std::vector<sf::Sprite*> sheWolfSprites;
-		std::vector<sf::Sprite*> hareSprites;
+		std::vector<int> wolfSprites;
+		std::vector<int> sheWolfSprites;
+		std::vector<int> hareSprites;
 		sf::Sprite gridCellSprite;
 	};
 

@@ -15,32 +15,32 @@ namespace Engine
 		hareSprites.clear();
 	}
 
-	void GridCell::AddWolf(sf::Sprite * wolf)
+	void GridCell::AddWolf(int index)
 	{
-		wolfSprites.push_back(wolf);
+		wolfSprites.push_back(index);
 	}
 
-	void GridCell::AddSheWolf(sf::Sprite * sheWolf)
+	void GridCell::AddSheWolf(int index)
 	{
-		sheWolfSprites.push_back(sheWolf);
+		sheWolfSprites.push_back(index);
 	}
 
-	void GridCell::AddHare(sf::Sprite * hare)
+	void GridCell::AddHare(int index)
 	{
-		hareSprites.push_back(hare);
+		hareSprites.push_back(index);
 	}
 
-	std::vector<sf::Sprite*> GridCell::GetWolfSprites()
+	std::vector<int> GridCell::GetWolfSprites()
 	{
 		return wolfSprites;
 	}
 
-	std::vector<sf::Sprite*> GridCell::GetSheWolfSprites()
+	std::vector<int> GridCell::GetSheWolfSprites()
 	{
 		return sheWolfSprites;
 	}
 
-	std::vector<sf::Sprite*> GridCell::GetHareSprites()
+	std::vector<int> GridCell::GetHareSprites()
 	{
 		return hareSprites;
 	}

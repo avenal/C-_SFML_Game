@@ -9,6 +9,7 @@ namespace Engine
 	{
 	public:
 		Hare(GameDataRef data);
+
 		void Spawn(int x, int y);
 		void SpawnRandom();
 		

@@ -21,6 +21,8 @@
 
 #define GRASS_FILEPATH "Resources/Graphics/grass.png"
 
-#define ANIMAL_MOVEMENT_SPEED 250.0f
+#define ANIMAL_MOVEMENT_SPEED 50.0f
 
 #define BOUNCE_SPEED 10.0f
+
+#define BOUNDARY 20

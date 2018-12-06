@@ -22,6 +22,7 @@ namespace Engine
 		void Insert(std::vector<sf::Sprite> wolf, std::vector<sf::Sprite> sheWolf, std::vector<sf::Sprite> hare);
 		void ClearGrid();
 		void WolfCollideWithHare(std::vector<sf::Sprite> *wolf, std::vector<sf::Sprite> *sheWolf, std::vector<sf::Sprite> *hare);
+		void HareCollideWithHare(std::vector<sf::Sprite> *wolf, std::vector<sf::Sprite> *sheWolf, std::vector<sf::Sprite> *hare);
 		~Grid();
 	private:
 		GameDataRef _data;

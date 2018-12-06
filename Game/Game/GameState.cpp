@@ -24,6 +24,7 @@ namespace Engine {
 		wolf = new Wolf(_data);
 		sheWolf = new SheWolf(_data);
 		hare = new Hare(_data);
+		grid->Insert(wolf->GetSprite(), sheWolf->GetSprite(), hare->GetSprite());
 	}
 	void GameState::HandleInput()
 	{
@@ -50,13 +51,17 @@ namespace Engine {
 	}
 	void GameState::Update(float dt)
 	{
-		grid->Insert(wolf->GetSprite(), sheWolf->GetSprite(), hare->GetSprite());
+		
 		wolf->Move(dt);
 		sheWolf->Move(dt);
 		hare->Move(dt);
 		grid->WolfCollideWithHare(&wolf->GetSprite(), &sheWolf->GetSprite(), &hare->GetSprite());
 		grid->ClearGrid();
-	}
+		grid->Insert(wolf->GetSprite(), sheWolf->GetSprite(), hare->GetSprite());
+		grid->HareCollideWithHare(&wolf->GetSprite(), &sheWolf->GetSprite(), &hare->GetSprite());
+		grid->ClearGrid();
+		grid->Insert(wolf->GetSprite(), sheWolf->GetSprite(), hare->GetSprite());
+	}	
 	void GameState::Draw(float dt)
 	{
 		this->_data->window.clear(sf::Color::Red);

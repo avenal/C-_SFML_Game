@@ -1,4 +1,20 @@
-﻿  Grid.cpp
+﻿  Game.cpp
+  Generating Code...
+  Compiling...
+  Animal.cpp
+d:\sfml_project\game\game\animal.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Compiling...
+  main.cpp
+  Wolf.cpp
+d:\sfml_project\game\game\wolf.cpp(14): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  SplashState.cpp
+  SheWolf.cpp
+d:\sfml_project\game\game\shewolf.cpp(14): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  MainMenuState.cpp
+  Hare.cpp
+d:\sfml_project\game\game\hare.cpp(14): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Grid.cpp
 d:\sfml_project\game\game\grid.cpp(60): warning C4018: '<': signed/unsigned mismatch
 d:\sfml_project\game\game\grid.cpp(63): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 d:\sfml_project\game\game\grid.cpp(64): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
@@ -26,7 +42,15 @@ d:\sfml_project\game\game\grid.cpp(127): warning C4244: '=': conversion from 'fl
 d:\sfml_project\game\game\grid.cpp(128): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 d:\sfml_project\game\game\grid.cpp(133): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 d:\sfml_project\game\game\grid.cpp(134): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-d:\sfml_project\game\game\grid.cpp(156): warning C4018: '<': signed/unsigned mismatch
-d:\sfml_project\game\game\grid.cpp(158): warning C4018: '<': signed/unsigned mismatch
+d:\sfml_project\game\game\grid.cpp(157): warning C4018: '<': signed/unsigned mismatch
 d:\sfml_project\game\game\grid.cpp(160): warning C4018: '<': signed/unsigned mismatch
+d:\sfml_project\game\game\grid.cpp(162): warning C4018: '<': signed/unsigned mismatch
+d:\sfml_project\game\game\grid.cpp(165): warning C4018: '>': signed/unsigned mismatch
+d:\sfml_project\game\game\grid.cpp(208): warning C4018: '<': signed/unsigned mismatch
+d:\sfml_project\game\game\grid.cpp(211): warning C4018: '<': signed/unsigned mismatch
+d:\sfml_project\game\game\grid.cpp(213): warning C4018: '<': signed/unsigned mismatch
+d:\sfml_project\game\game\grid.cpp(219): warning C4018: '<': signed/unsigned mismatch
+  GameState.cpp
+  Collision.cpp
+  Generating Code...
   Game.vcxproj -> D:\SFML_Project\Game\Debug\Game.exe
